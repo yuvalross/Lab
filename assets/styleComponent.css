@@ -1,0 +1,32 @@
+#comboBox_com{
+
+/*    border-radius: 50px;*/
+    background-color: #2A827C;
+    color: white;
+    font-size: 20px;
+    font-family: 'assistant', sans-serif;
+    direction: rtl;
+    border-color:  #2A827C;
+    padding-right: 15px;
+    padding-left: 20px;
+}
+
+#comboBox_com option{
+
+   border-radius: 30px;
+     font-size: 20px;
+}
+
+#comboBox_com option:hover{
+    background-color: white;
+}
+
+#textInputCodeGame{
+    font-size: 24px;
+    background-color: #92BFBC;
+    font-family: 'assistant', sans-serif;
+    direction: rtl;
+    color: black;
+    border-color:  #707070;
+    border-radius: 13px;
+}

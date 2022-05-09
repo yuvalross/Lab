@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>מעבדת HIT</title>
+    <meta name="description" content="מעבדת HIT" />
+    <meta name="keywords" content="מעבדה, ניסויים, HIT, פרויקט משולש, מחולל" />
+    <meta name="author" content="Idan Moshe, Rotem Shalom, Yuval Ross" />
+    <link rel="shortcut icon" type="image/png" href="Images/gameLogo.svg">
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="Game.html" id="logoLink">
+                <img id="logo" src="images/gameLogo.svg"> <!--הלוגו של המשחק שלכם-->
+                <p>מעבדת HIT</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <h1>אודות</h1>
+            <a class="closeAbout closeIcon"><img src="images/close.png"></a>
+            <div class="pTxt" id="center">
+                 <p><strong>אפיון ופיתוח:</strong>יובל רוס, רותם שלום ועידן משה</p>
+                <p><strong>אופיין ופותח במסגרת פרויקט בקורסים:</strong></p>
+                <p>סביבות לימוד אינטראקטיביות 1 +  אינטראקציה ואנימציה 1</p>
+               
+                <a href="https://www.hit.ac.il/" target="_blank"> <img src="images/logoHIT-01.png" class="logoHit"></a>
+                <br>
+                <a href="https://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה</a>
+                <p id="credit">לטבלת זכויות יוצרים <a href="files/SourcesTableHITLab.pdf" target="_blank"> לחץ כאן</a></p>
+            </div>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <h1><strong>איך משחקים?</strong></h1>
+            <a class="closeHowToPlay closeIcon"><img src="images/close.png"></a>
+           
+            <p class="pTxt" >משחק שאלות ותשובות להעשרת הידע בנושא נבחר. <br> כל משחק יכיל לפחות 10 שאלות. <br><br><strong>מהלך משחק:</strong><br>
+                תחילה בחרו את השיקוי אותם אתם רוצים להכין. לאחר מכן, קראו כל שאלה, בחרו בתשובה הנכונה לדעתכם ולחצו על בדיקה. <br> אחרי כל ניסיון יופיע משוב שיספר לכם אם צדקתם או לא.. במידה ולא, השאלה תחזור שוב בהמשך. <br><br> לכל שאלה יש 45 שניות זמן מענה. <br> <br> <strong>בהצלחה, המדען!</strong></p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="Game.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
